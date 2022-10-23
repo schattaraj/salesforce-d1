@@ -1,0 +1,123 @@
+footer{
+    margin-top: 100px;
+    border-top:1px solid rgba($primary,0.1); 
+    padding-top: 40px;
+    .logo img {
+        width: 200px;
+    }
+    .attribute {
+        margin-top: 16px;
+        opacity: .7;
+        a{
+            text-decoration: none;
+    color: $primary;
+        }
+    }
+    @media (max-width:767px) {
+     .logo img{width:150px;}
+     .attribute{
+        margin-bottom: 24px;
+     }
+    }
+    @media (max-width:575px) {
+        margin-top: 40px;
+    }
+    .footer-menu{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        li{
+            margin-bottom: 16px;
+            a{
+    color: #172229;
+    text-decoration: none;
+    font-weight: 700;
+            }
+        }
+    }
+.contact-info{
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+            display: flex;
+    margin-bottom: 16px;
+    text-align: left;
+    a{
+        color: initial;
+        text-decoration: none;
+    }
+    i {
+        margin-right: 8px;
+        color: $primary;
+    }
+        }
+    }
+}
+.policy {
+    padding: 20px 0;
+    border-top: 1px solid #f7f7f7;
+    text-align: center;
+    h6{
+        margin: 0;
+    }
+}
+form {
+    display: flex;
+    border: 2px solid $primary;
+    border-radius: 30px;
+    margin-bottom: 32px;
+    input{
+        padding: 5px 10px;
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+    &:focus{
+        outline: none;
+    }
+    }
+    button {
+        display: inline-block;
+        transition: 0.3s ease-in-out;
+        text-decoration: none;
+        background: $primary;
+        border: 1px solid $primary;
+        padding: 8px 32px;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+.social-links{
+    display: flex;
+    a{
+        margin: 0 6px;
+        transition: all 0.3s;
+        text-decoration: none;
+        color: #ffffff;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.facebook {
+            background-color: #3b5998;
+        }
+        &.twitter {
+            background-color: #1da1f2;
+        }
+        &.linkedin {
+            background-color: #006fa6;
+        }
+        &.youtube {
+            background-color: #DD2C28;
+        }
+    }
+}
+}
