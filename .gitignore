@@ -9,6 +9,6 @@
 out
 gen
 node_modules/
-build/
+.gitignore
 package-lock.json
 src/library/.DS_Store
