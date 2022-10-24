@@ -95,7 +95,22 @@ if(owlnext){
     startDelay: 400,
     loop: true,
   });
-
+   new Typed('.typed2', {
+    stringsElement: '.typed-strings2',
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 500,
+    startDelay: 400,
+    loop: true,
+  });
+  new Typed('.typed3', {
+    stringsElement: '.typed-strings3',
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 500,
+    startDelay: 400,
+    loop: true,
+  });
  //wow js
  var wow = new WOW(
     {

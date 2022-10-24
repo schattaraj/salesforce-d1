@@ -6,6 +6,7 @@
 }
 
 body{
+  overflow-x: hidden;
   ul{
     list-style: none;
     padding: 0;
@@ -290,114 +291,17 @@ h3 {
 .services-section{
   margin:60px 0;
   margin-top: 180px;
-  background-image: url('../../assets/images/Vector.png');
+  // background-image: url('../../assets/images/Vector.png');
   background-size: cover;
   width: 100%;
-  min-height: 800px;
+  // min-height: 800px;
   background-position: 0 60px;
   background-repeat: no-repeat;
   .heading{
     margin-bottom: 18px;
   }
   .owl-carousel{
-    .owl-item{
-      a{
-        text-decoration: none;
-        color: initial;
-      }
-      .item{
-        background-color: $lightGray;
-        border:1px solid rgba(0, 0, 0, 0.028);
-        margin: 0 1px;
-        border-radius: 4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border: 1px solid $lightGray;
-        transition: all 0.4s;
-        border-radius: 4px;
-        overflow: hidden;
-        .image{
-          width:100%;           
-          img{
-            width:100%;
-            height: 300px;
-            object-fit: cover;
-          }
-        }
-        .text{
-          min-height: 204px;
-          width: 100%;
-        h3{
-          font-size: 24px;
-          font-weight: bold;
-          position: relative;
-          margin-bottom: 16px; 
-          display:-webkit-box;
-          text-overflow: ellipsis;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical; 
-          transition: all 0.4s;
-        }
-        p{
-          font-size: 16px;
-          display:-webkit-box;
-          text-overflow: ellipsis;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          margin: 0;
-          transition: all 0.4s;
-        }
-        padding: 20px;
-        .flex{
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          .name{
-            display: flex;
-            align-items: center;
-            span{
-          color: $primary;
-          margin-left: 6px;
-            }
-            img{
-              aspect-ratio: 2/2;
-              border-radius: 50%;
-              height: 50px;
-              object-fit: cover;
-            }
-          }
-          .ratings{
-            display: flex;
-            svg{
-              margin: 0 3px;
-              width: 16px;
-              height: 16px;
-              color:$primary;
-              fill: $primary;
-            }
-          }
-          
-        }
-        .info{
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          border-top: 1px dashed $gray;
-          padding-top: 20px;
-          margin-top: 20px;
-          font-size: 14px;
-          color:$gray;
-          svg{
-            width: 14px;
-            height: 14px;
-          }
-        }
-      }
-      }
-    }
+     
     .owl-nav{
       .owl-prev,.owl-next{
         position: absolute;
@@ -690,6 +594,7 @@ h3 {
         padding:16px;
         display: flex;
         align-items: center;
+        width:100%;
         img{
           width: 80px;
           height: 80px;

@@ -1,10 +1,21 @@
 footer{
-    margin-top: 100px;
+    // margin-top: 100px;
     border-top:1px solid rgba($primary,0.1); 
     padding-top: 40px;
-    .logo img {
+    .logo{ 
+        img {
         width: 200px;
     }
+    h3{
+        margin: 0;
+        font-size: 28px;
+        color: $primary;
+        font-weight: bold;
+        span{
+          color: $dark;
+        }
+      }
+}
     .attribute {
         margin-top: 16px;
         opacity: .7;
