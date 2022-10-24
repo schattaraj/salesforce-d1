@@ -93,4 +93,17 @@ a{
       }
     }
   }
+  @media (max-width:575px) {
+    .text{
+      min-height: auto;
+      h3{
+        font-size: 20px;
+      }
+    }
+    .image{
+      img{
+        height: 178px;
+      }
+    }
+  }
   }

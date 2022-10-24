@@ -32,6 +32,9 @@ footer{
     }
     @media (max-width:575px) {
         margin-top: 40px;
+        .logo{
+            margin-bottom: 20px;
+        }
     }
     .footer-menu{
         list-style: none;

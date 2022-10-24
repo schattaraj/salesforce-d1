@@ -147,7 +147,7 @@ h3 {
     }
     .carousel-caption{
       h3{
-        font-size: 40px;
+        font-size: 32px;
       }
       .typed{
         font-size: 18px;
@@ -161,6 +161,7 @@ h3 {
 .about-us{
   margin: 100px 0;
     color: #172229;
+    overflow-x: hidden;
     .tag{
       text-transform: uppercase;
       font-weight: bold;
@@ -218,6 +219,8 @@ h3 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 20px;
+        text-align: center;
         h5{
           font-size: 60px;
         }
@@ -263,26 +266,34 @@ h3 {
  }
  @media (max-width:575px) {
   margin: 50px 0;
+  .tag{
+    font-size: 14px;
+  }
   .content{
-    padding-top: 124px;
+    padding-top: 50px;
+    padding-right: 0;
+    .head{
+      font-size: 24px;
+    }
   }
   .image{
-    padding-right: 40px;
-    .extra{
-      right: 0;
-      width:144px;
-      top:12px;
-      h4{
-        font-size: 18px;
+     .before{
+h5{
+  font-size: 30px;
+}
+p{
+  font-size: 18px;
+}
+     }
+    
+  }
+  ul{
+    li{
+      .text{
+        h4{
+          font-size: 20px;
+        }
       }
-    }
-    img{
-      height: 235px;
-    }
-    img.image2{
-      right: 0;
-      width:300px;
-      height: 166px;
     }
   }
  }
@@ -510,10 +521,10 @@ h3 {
     .owl-carousel{
       .owl-nav{
         .owl-prev{
-          left: 0;
+          left: -10px;
         }
         .owl-next{
-          right: 0;
+          right: -10px;
         }
       }
     }
@@ -554,6 +565,7 @@ h3 {
 .our-testimonial{
   margin-top: 40px;
   margin-bottom: 100px;
+  overflow-x: hidden;
   p.tag{
     font-size: 48px;
     font-weight: 300;
@@ -647,153 +659,30 @@ h3 {
   p.tag{
     font-size: 32px;
   }
+  @media (max-width:575px) {
+    .owl-carousel{
+      .item{
+        .text{
+          padding: 20px 28px;
+        }
+        .info{
+          padding: 10px;
+          img{
+            width: 60px;
+            height: 60px;
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+    p.tag{
+      font-size: 28px;
+    }
+  }
 }
 
-.case{
-   background: rgba(108, 107, 107, 0.31);
-   padding: 40px 0;
-   .left{
-    position: relative;
-    a{
-      transition: all 0.4s;
-      &:hover{ 
-        color: $yellow;
-        .caption{
-          h4{
-          transition: all 0.4s;
-          color: $yellow;
-          }
-        }
-      }
-    }
-    .image{
-      position: relative;
-      &:before{
-      @include overlay($t:0,$l:0,$r:auto,$b:auto,$w:100%,$h:100%,$bg:rgba(94, 94, 94, 0.43));
-    }
-    .caption{
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      h4{
-        color: $white;
-        font-size: 18px;
-        font-weight: 600;
-      }
-    }
-  }
-    img{
-      height: 222px;
-      object-fit: cover;
-      width: 100%;
-    }
-   h3{
-    font-size: 35px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 18px;
-    span{
-      color: $primary;
-    }
-   }
-   p{
-    padding-bottom: 20px;
-    border-bottom: 1px solid $gray;
-   }
-   a{
-    color: $dark;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 40px;
-    font-weight: bold;
-    svg{
-      color: $yellow;
-    }
-   }
-  }
-   .right{
-    a{
-      &:hover{
-       .caption{h4{ color: $yellow;}}
-      }
-    }
-    .image{
-      position: relative;
-      &:before{
-        @include overlay($t:0,$l:0,$r:auto,$b:auto,$w:100%,$h:100%,$bg:rgba(94, 94, 94, 0.63));
-      }
-      &.black{
-        background-color: $dark;
-        &::before{
-          background-color: transparent;
-        }
-      }
-      .caption{
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        h4{
-          color: $white;
-          font-size: 18px;
-          font-weight: 600;
-          transition: all 0.4s;
-        }
-      }
-    }
-    ul{
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 -12px;
-      padding-left: 16px;
-      li{
-        width: 50%;
-        padding:0 12px;
-        margin-bottom: 18px;
-        img{
-          width: 100%;
-          height: 218px;
-          object-fit:cover;
-        }
-      }
-    }
-   }
-   @media (max-width:991px) {
-    .right{
-      ul{
-        padding-left: 0;
-      }
-    }
-   }
-   @media (max-width:575px) {
-    .left{
-      a{
-        margin-bottom: 16px;
-      }
-    }
-    .right{
-      ul{
-        padding-left: 0;
-        margin: 0 -8px;
-        li{
-          padding: 0 8px;
-          img{
-            height: 188px;
-          }
-          .image{
-          .caption{
-            left: 8px;
-            bottom: 8px;
-            h4{
-              font-size: 14px;
-            }
-          }
-        }
-        }
-      }
-    }
-   }
-}
 .team{
+  overflow-x: hidden;
   .heading{
     p{
       margin: 0;
